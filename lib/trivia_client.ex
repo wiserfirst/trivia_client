@@ -10,8 +10,11 @@ defmodule TriviaClient do
 
   ## Examples
 
-      iex> TriviaClient.random
-      :world
+      iex> TriviaClient.random 2
+      [{"The name of this Army branch is also something a knight might wear",
+        "Armor"},
+       {"This U.S. city precedes \"brown\" in the name of a sweet, dark steamed bread",
+        "Boston"}]
 
   """
   def random(count \\ 1) do
